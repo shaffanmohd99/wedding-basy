@@ -53,7 +53,7 @@ export default function HomePage() {
                 variant="body"
                 className="text-[#332117] font-bold text-center"
               >
-                Haji Roslan Mohamad <span className="text-[10px] italic">S.M.K.</span>
+                Haji Roslan Bin Mohamad <span className="text-[10px] italic">S.M.K.</span>
               </Typography>
               <Typography
                 variant="body"
@@ -65,7 +65,7 @@ export default function HomePage() {
                 variant="body"
                 className="text-[#332117] font-bold text-center "
               >
-                Hajjah Siti Badarny Shamsai&apos;fah Hassan
+                Hajjah Siti Badarny Shamsai&apos;fah Binti Hassan
               </Typography>
               <Typography
                 variant="body"
@@ -80,7 +80,7 @@ export default function HomePage() {
                   variant="h1"
                   className="text-[#172733]  text-center mt-2 font-bold"
                 >
-                  Nur Basyirah binti Roslan
+                  Nur Basyirah Binti Roslan
                 </Typography>
                 <Typography
                   variant="h3"
@@ -92,7 +92,7 @@ export default function HomePage() {
                   variant="h1"
                   className="text-[#172733] text-center  font-bold"
                 >
-                  Norshaffan bin Mohd
+                  Norshaffan Bin Mohd
                 </Typography>
               </div>
             </div>
