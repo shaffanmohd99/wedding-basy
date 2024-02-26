@@ -62,8 +62,8 @@ export default function HomePage() {
                 variant="body"
                 className="text-[#332117] font-bold text-center"
               >
-                Haji Roslan Bin Mohamed{" "}
-                <span className="text-[10px] italic">S.M.K.</span>
+                Haji Roslan Bin Mohamed,{" "}
+                <span className="text-[10px] italic">S.M.K</span>
               </Typography>
               <Typography
                 variant="body"
