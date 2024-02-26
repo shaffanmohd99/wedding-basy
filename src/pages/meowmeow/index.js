@@ -11,6 +11,7 @@ import { CiCirclePlus } from "react-icons/ci";
 import AttendanceDialog from "../home/component/AttendanceDialog";
 import { TbEdit } from "react-icons/tb";
 import EditDialog from "./component/EditDialog";
+import Card from "@/components/reuseable/Card";
 
 export default function MeowMeow() {
   const [openDeletedialog, setOpenDeletedialog] = useState(false);
@@ -133,6 +134,28 @@ export default function MeowMeow() {
                 </p>
               </div>
             </div>
+            <div className="flex w-full gap-8 mt-5">
+              <Card maxWidth="w-[200px]">
+                <div className="flex  flex-col">
+                  <Typography variant="h3" className="text-white">
+                    {fetchedData?.summary?.totalResponses}
+                  </Typography>
+                  <Typography variant="body" className="text-white/75">
+                    Total responses
+                  </Typography>
+                </div>
+              </Card>
+              <Card maxWidth="w-[200px]">
+                <div className="flex  flex-col">
+                  <Typography variant="h3" className="text-white">
+                    {fetchedData?.summary?.totalPax}
+                  </Typography>
+                  <Typography variant="body" className="text-white/75">
+                    Total pax
+                  </Typography>
+                </div>
+              </Card>
+            </div>
             <div className="flex items-center justify-between mt-8">
               <div className="flex items-center bg-white rounded border border-gray-300 px-3 py-2 w-[450px]">
                 <BsSearch className="text-gray-400" />
@@ -155,6 +178,7 @@ export default function MeowMeow() {
                 </Button>
               </div>
             </div>
+
             <div className="mt-4 flex flex-col">
               <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -182,9 +206,9 @@ export default function MeowMeow() {
                           </th>
                           <th
                             scope="col"
-                            className="px-3 py-3.5 text-left text-sm font-semibold text-white"
+                            className="px-3 py-3.5 text-center text-sm font-semibold text-white"
                           >
-                            Attendance
+                            No. of pax
                           </th>
                           <th
                             scope="col"
@@ -206,7 +230,7 @@ export default function MeowMeow() {
                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                               <Skeleton />
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                            <td className="whitespace-nowrap px-3 py-4 text-center text-sm text-gray-500">
                               <Skeleton />
                             </td>
                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
@@ -248,8 +272,8 @@ export default function MeowMeow() {
                               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                 {item.phoneNumber}
                               </td>
-                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                {item.attendance ? "Yes" : "No"}
+                              <td className="whitespace-nowrap px-3 py-4 text-sm text-center text-gray-500">
+                                {item.numberOfPax}
                               </td>
                               <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                 <div className="flex gap-4 items-center">

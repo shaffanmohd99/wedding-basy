@@ -13,14 +13,18 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center bg-[#faf7f2] ">
       <Head>
-        <title>
-          Walimatul Urus Shaffan & Basyirah
-        </title>
+        <title>Walimatul Urus Shaffan & Basyirah</title>
+        <meta property="og:title" content="Walimatul Urus Shaffan & Basyirah" />
         <meta
-          name="description"
+          property="og:description"
           content="27 April 2024 | Rinching Terrace,Kajang"
-          key="desc"
         />
+        <meta
+          property="og:image"
+          content="https://april27.loveshaffanbasyirah.com/assets/gambar_3.jpg" // Replace with the correct path to your image
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <div
         className="w-full max-w-lg"

@@ -34,7 +34,7 @@ export default function Typography({
   if (variant === "h5") {
     return (
       <h1
-        className={`sm"text-2xl text-lg      ${className}`}
+        className={`sm:text-2xl text-lg      ${className}`}
       >
         {children}
       </h1>
@@ -44,7 +44,7 @@ export default function Typography({
   if (variant === "body") {
     return (
       <h1
-        className={` sm:text-lg text-md text-gray-700  ${className}`}
+        className={` sm:text-lg text-md   ${className}`}
       >
         {children}
       </h1>
