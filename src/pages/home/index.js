@@ -39,10 +39,19 @@ export default function HomePage() {
       <div className="w-full  ">
         <div className="p-4">
           <div className="pt-8">
-            {/* <Typography variant="h3" className="text-[#332117] text-center">
-              {` Copywriting  juga di sini `}
-            </Typography> */}
-            <div className="flex flex-col">
+            <div className="flex justify-center items-center">
+              <Card>
+                <div className="w-full  h-[300px] ">
+                  <img
+                    src="/assets/papa_mummy.jpeg"
+                    // src="/assets/gambar.jpg"
+                    className="h-full w-full select-none object-cover rounded-lg"
+                    alt="gambar"
+                  />
+                </div>
+              </Card>
+            </div>
+            <div className="flex flex-col mt-5">
               <Typography
                 variant="body"
                 className="text-[#332117] mt-2 text-center"
@@ -53,7 +62,8 @@ export default function HomePage() {
                 variant="body"
                 className="text-[#332117] font-bold text-center"
               >
-                Haji Roslan Bin Mohamad <span className="text-[10px] italic">S.M.K.</span>
+                Haji Roslan Bin Mohamad{" "}
+                <span className="text-[10px] italic">S.M.K.</span>
               </Typography>
               <Typography
                 variant="body"
