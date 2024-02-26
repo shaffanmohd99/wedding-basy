@@ -81,9 +81,9 @@ export default function HomePage() {
                 variant="body"
                 className="text-[#332117] text-center mt-2 "
               >
-                Dengan penuh rasa kesyukuran, sukacita menjemput Tengku | Tun |
-                Tan Sri | Dato&apos; Sri | Dato&apos; | Datin | Tuan | Puan ke
-                Majlis Perkahwinan puteri kami bersama pasangannya
+                Dengan penuh rasa kesyukuran, sukacita menjemput Tun | Tan Sri |
+                Tengku | Raja | Dato Seri | Dato | Datin | Tuan | Puan ke Majlis
+                Perkahwinan puteri kami bersama pasangannya
               </Typography>
               <div className={`${great_vibes.className}`}>
                 <Typography
