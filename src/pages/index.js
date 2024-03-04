@@ -4,11 +4,12 @@ import { Great_Vibes } from "next/font/google";
 import HomePage from "./home";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { useState } from "react";
 
 // const inter = Inter({ subsets: ['latin'] })
 const great_vibes = Great_Vibes({ subsets: ["latin"], weight: "400" });
 export default function Home() {
-  // const router = useRouter();
+  const [languange, setLanguange] = useState("bm");
 
   return (
     <div className="flex justify-center items-center bg-[#faf7f2] ">
@@ -61,17 +62,8 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
-          {/* <div className=" h-[15%] w-full flex items-center px-4">
-          <button
-            onClick={() => router.push("/home")}
-            type="button"
-            className="inline-flex w-full justify-center items-center px-5 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-[#bc8c53] hover:bg-[#af7947] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#bc8c53]"
-          >
-            Click to find out more
-          </button>
-        </div> */}
         </div>
-        <HomePage />
+        <HomePage languange={languange} />
       </div>
     </div>
   );
